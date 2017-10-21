@@ -1,7 +1,6 @@
 #
 # ~/.bashrc
 #
-#export PS1="[\w]\n\\$ "
 [[ $- != *i* ]] && return
 
 colors() {
@@ -38,4 +37,5 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
+
 export PS1="\[\e[1;37m\][\[\e[1;32m\]\w\[\e[1;37m\]]\[\e[0m\]\n\\$ "

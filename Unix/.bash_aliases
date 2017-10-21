@@ -26,6 +26,7 @@ alias gaa='git add -A'
 # Package management
 alias sps='sudo pacman -S'
 alias spr='sudo pacman -R'
+alias clean_orphans='sudo pacman -Rns $(pacman -Qtdq)'
 alias ya='yaourt'
 
 # System
