@@ -38,9 +38,11 @@ set ruler
 set laststatus=2
 set showmatch
 set matchtime=3
+set noswapfile
+set noshowmode
 
 set encoding=utf8
 let g:netrw_banner=0
 let g:netrw_liststyle=3
-nmap <c-s> :w<CR>
+"nmap <c-s> :w<CR>
 set autoread
