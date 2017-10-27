@@ -1,0 +1,51 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-endwise'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-abolish'
+Plugin 'osyo-manga/vim-over'
+Plugin 'joshdick/onedark.vim'
+Plugin 'sheerun/vim-polyglot'
+Plugin 'itchyny/lightline.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'takac/vim-hardtime'
+call vundle#end()
+
+
+filetype plugin indent on
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }
+let g:hardtime_default_on = 1
+let g:hardtime_timeout = 2000
+let g:hardtime_ignore_buffer_patterns = [ "NERD.*" ]
+let g:NERDTreeWinSize=25
+colorscheme onedark
+syntax on
+set hidden
+set nu
+set rnu
+set ruler
+set laststatus=2
+set showmatch
+set noswapfile
+set noshowmode
+set go -=m
+set go -=T
+set go -=r
+set go -=L
+map <C-n> :NERDTreeToggle<CR>
+map <A-left> <C-w>h
+map <A-right> <C-w>l
+set guifont=Liberation_Mono:h14
+autocmd VimEnter * NERDTreeFind
+autocmd VimEnter * wincmd w
