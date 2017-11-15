@@ -6,25 +6,25 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 
 " Vundle plugins
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-endwise'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-surround'
-Plugin 'SirVer/ultisnips'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'jtratner/vim-flavored-markdown'
-Plugin 'tpope/vim-abolish'
-Plugin 'osyo-manga/vim-over'
-Plugin 'joshdick/onedark.vim'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'itchyny/lightline.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'takac/vim-hardtime'
-Plugin 'honza/vim-snippets'
-call vundle#end()
+call plug#begin('~/.vim/plug')
+Plug 'VundleVim/Vundle.vim'
+Plug 'tpope/vim-endwise'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'SirVer/ultisnips'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'jtratner/vim-flavored-markdown'
+Plug 'tpope/vim-abolish'
+Plug 'osyo-manga/vim-over'
+Plug 'joshdick/onedark.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'takac/vim-hardtime'
+Plug 'honza/vim-snippets'
+call plug#end()
 
 " Plugin vars override 
 let g:onedark_terminal_italics=1
